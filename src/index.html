@@ -1,13 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Elsewhere: a field guide to slowing down and finding wonder outside."
+    />
+    <title>Elsewhere — A little closer to the wild</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#places">Skip to content</a>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="wordmark" href="#home"
+          ><span class="icon icon-compass" aria-hidden="true"></span
+          >elsewhere.</a
+        >
+        <nav aria-label="Main navigation">
+          <a href="#home" class="active" aria-current="location">Home</a
+          ><a href="#places">Places</a><a href="#journal">Field notes</a
+          ><a href="#film">Slow moments</a><a href="#about">Our story</a>
+        </nav>
+        <a class="nav-cta" href="#places"
+          >Find your elsewhere <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-content container">
+          <p class="eyebrow">― &nbsp; A FIELD GUIDE TO THE OUTSIDE</p>
+          <h1 id="hero-title">A little closer<br />to the <em>wild.</em></h1>
+          <p class="hero-description">
+            Less noise. More wonder. Discover places, stories,<br
+              class="desktop-break"
+            />
+            and small moments that bring you back to nature.
+          </p>
+          <a class="button button-light" href="#places"
+            >Explore the collection <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="hero-bottom container">
+          <span>INDEPENDENT SPIRIT. OPEN SKIES.</span
+          ><a href="#places"
+            >SCROLL TO WANDER
+            <span class="scroll-arrow" aria-hidden="true">↓</span></a
+          ><span>VOL. 01 / THE GREAT OUTSIDE</span>
+        </div>
+      </section>
+      <section
+        class="places section-pad"
+        id="places"
+        aria-labelledby="places-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">01 / PLACES TO GET LOST IN</p>
+              <h2 id="places-title">
+                Out of the ordinary.<br /><em>Into the open.</em>
+              </h2>
+            </div>
+            <p>A change of scenery.<br />A different kind of perspective.</p>
+          </div>
+          <div
+            class="carousel"
+            role="region"
+            aria-roledescription="carousel"
+            aria-label="Places to explore"
+            tabindex="0"
+          >
+            <article
+              class="slide"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="1 of 3"
+            >
+              <img
+                src="assets/mountains.jpg"
+                alt="Dramatic sunlit mountain peaks rising into a cloudy sky"
+                width="1600"
+                height="1067"
+              />
+              <div class="slide-content">
+                <p class="eyebrow">HIGHER GROUND / 01</p>
+                <h3>Follow the ridgeline.</h3>
+                <p>Big skies. Quiet trails. A little room to breathe.</p>
+                <button class="text-button" data-story="mountains">
+                  Discover the mountains <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </article>
+            <article
+              class="slide"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="2 of 3"
+              hidden
+            >
+              <img
+                src="assets/forest.jpg"
+                alt="Tall woodland trees with light filtering through the canopy"
+                width="1920"
+                height="1280"
+              />
+              <div class="slide-content">
+                <p class="eyebrow">UNDER THE CANOPY / 02</p>
+                <h3>Take the slower path.</h3>
+                <p>Let the trees set the pace for a while.</p>
+                <button class="text-button" data-story="forest">
+                  Step into the forest <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </article>
+            <article
+              class="slide"
+              role="group"
+              aria-roledescription="slide"
+              aria-label="3 of 3"
+              hidden
+            >
+              <img
+                src="assets/lake.jpg"
+                alt="An alpine lake reflecting the surrounding mountains and sky"
+                width="1600"
+                height="1067"
+              />
+              <div class="slide-content">
+                <p class="eyebrow">STILL WATERS / 03</p>
+                <h3>Find your stillness.</h3>
+                <p>Some views ask for nothing but your attention.</p>
+                <button class="text-button" data-story="lake">
+                  Stay by the water <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </article>
+            <button class="carousel-arrow previous" aria-label="Previous slide">
+              ←</button
+            ><button class="carousel-arrow next" aria-label="Next slide">
+              →
+            </button>
+          </div>
+          <div class="carousel-footer">
+            <p id="slide-status" aria-live="polite" aria-atomic="true">
+              01 / 03 — Higher ground
+            </p>
+            <div class="dots" aria-label="Choose a slide">
+              <button
+                class="selected"
+                aria-label="Show slide 1: mountains"
+                aria-pressed="true"
+              ></button
+              ><button
+                aria-label="Show slide 2: forest"
+                aria-pressed="false"
+              ></button
+              ><button
+                aria-label="Show slide 3: lake"
+                aria-pressed="false"
+              ></button>
+            </div>
+            <span>A FEW OF OUR FAVORITE ESCAPES</span>
+          </div>
+        </div>
+      </section>
+      <section
+        class="journal section-pad"
+        id="journal"
+        aria-labelledby="journal-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 / NOTES FROM THE TRAIL</p>
+              <h2 id="journal-title">
+                For the curious<br /><em>at heart.</em>
+              </h2>
+            </div>
+            <p>
+              You don't have to go far.<br />You just have to look a little
+              closer.
+            </p>
+          </div>
+          <div class="journal-grid">
+            <article class="note">
+              <button
+                class="image-button"
+                data-story="forest"
+                aria-label="Read: The art of noticing"
+              >
+                <img
+                  src="assets/forest.jpg"
+                  alt="A green, sun-dappled forest"
+                  loading="lazy"
+                  width="600"
+                  height="420"
+                /><span aria-hidden="true">↗</span>
+              </button>
+              <p class="eyebrow">MINDFUL WANDERING · FIELD NOTE 01</p>
+              <h3>The art of noticing</h3>
+              <p>
+                A quieter walk starts when you stop counting the steps and start
+                seeing the details.
+              </p>
+              <button class="read-link" data-story="forest">
+                Read field note ↗
+              </button>
+            </article>
+            <article class="note">
+              <button
+                class="image-button"
+                data-story="mountains"
+                aria-label="Read: A little higher, a little lighter"
+              >
+                <img
+                  src="assets/mountains.jpg"
+                  alt="A craggy mountain summit"
+                  loading="lazy"
+                  width="600"
+                  height="420"
+                /><span aria-hidden="true">↗</span>
+              </button>
+              <p class="eyebrow">FRESH PERSPECTIVES · FIELD NOTE 02</p>
+              <h3>A little higher, a little lighter</h3>
+              <p>
+                What a wide horizon can teach us about making space for the
+                things that matter.
+              </p>
+              <button class="read-link" data-story="mountains">
+                Read field note ↗
+              </button>
+            </article>
+            <article class="note">
+              <button
+                class="image-button"
+                data-story="lake"
+                aria-label="Read: In praise of doing nothing"
+              >
+                <img
+                  src="assets/lake.jpg"
+                  alt="Quiet mountain water reflecting the landscape"
+                  loading="lazy"
+                  width="600"
+                  height="420"
+                /><span aria-hidden="true">↗</span>
+              </button>
+              <p class="eyebrow">SLOW LIVING · FIELD NOTE 03</p>
+              <h3>In praise of doing nothing</h3>
+              <p>
+                No destination. No checklist. Just a place beside the water and
+                time to be there.
+              </p>
+              <button class="read-link" data-story="lake">
+                Read field note ↗
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="pause-banner" aria-label="An invitation to pause">
+        <div class="container">
+          <p class="eyebrow">A GENTLE REMINDER</p>
+          <h2>
+            There is no Wi-Fi here.<br />But we promise a
+            <em>better connection.</em>
+          </h2>
+          <span class="icon icon-compass" aria-hidden="true"></span>
+        </div>
+      </section>
+      <section class="film section-pad" id="film" aria-labelledby="film-title">
+        <div class="container film-grid">
+          <div>
+            <p class="eyebrow">03 / SLOW MOMENTS</p>
+            <h2 id="film-title">
+              Nothing to do.<br /><em>Everything to see.</em>
+            </h2>
+            <p>
+              A few seconds in the life of a flower. Press play, take a breath,
+              and give something small your full attention.
+            </p>
+            <div class="film-caption">
+              <span class="icon icon-play" aria-hidden="true"></span
+              ><span
+                >A MOMENT IN BLOOM<br /><small
+                  >A short nature study · 0:05</small
+                ></span
+              >
+            </div>
+          </div>
+          <figure>
+            <video
+              controls
+              muted
+              playsinline
+              preload="metadata"
+              aria-label="A short, silent close-up film of flowers moving in the breeze"
+            >
+              <source src="assets/flower.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video.
+              <a href="assets/flower.mp4">Download the film</a>.
+            </video>
+            <figcaption>
+              Look closer. There is a whole world in the small things.<br />Silent
+              footage · MDN / CC0
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section
+        class="about section-pad"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="container about-inner">
+          <p class="eyebrow">04 / THE ELSEWHERE WAY</p>
+          <h2 id="about-title">Outside is for <em>everyone.</em></h2>
+          <p>
+            Elsewhere is an independent, fictional nature journal about everyday
+            adventure. We believe a little time outside can change the shape of
+            a day. A neighborhood trail counts. So does the tree outside your
+            window.
+          </p>
+          <p class="about-signoff">Go gently. Stay curious. Leave it wild.</p>
+          <a class="button button-dark" href="#home"
+            >Back to the beginning <span aria-hidden="true">↑</span></a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-top">
+        <a class="wordmark" href="#home"
+          ><span class="icon icon-compass" aria-hidden="true"></span
+          >elsewhere.</a
+        >
+        <p>A little less scrolling. A little more wandering.</p>
+        <div class="socials" aria-label="Nature communities">
+          <a
+            href="https://www.instagram.com/natgeo/"
+            aria-label="National Geographic on Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="icon icon-instagram" aria-hidden="true"></span></a
+          ><a
+            href="https://www.youtube.com/@nationalgeographic"
+            aria-label="National Geographic on YouTube"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="icon icon-youtube" aria-hidden="true"></span
+          ></a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 ELSEWHERE · A CS409 STUDENT PROJECT</span
+        ><button class="read-link" data-story="credits">
+          Image & film credits ↗</button
+        ><span>MADE WITH A LITTLE WONDER</span>
+      </div>
+    </footer>
+    <dialog id="story-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" aria-label="Close field note">×</button>
+      <p class="eyebrow" id="dialog-label"></p>
+      <h2 id="dialog-title"></h2>
+      <div id="dialog-body"></div>
+      <button class="button button-dark dialog-done">Keep wandering ↗</button>
+    </dialog>
+  </body>
 </html>

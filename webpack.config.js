@@ -6,12 +6,12 @@ module.exports = {
   mode: "development",
   devtool: "source-map",
   devServer: {
-    static: { directory: path.resolve(__dirname, 'build') },
+    static: { directory: path.resolve(__dirname, "build") },
     open: true,
     host: "localhost",
-    watchFiles: 'index.html',
+    watchFiles: "index.html",
   },
-  context: path.join(__dirname, 'src'),
+  context: path.join(__dirname, "src"),
   entry: "./index.js",
   module: {
     rules: [
@@ -28,6 +28,11 @@ module.exports = {
         type: "asset",
       },
       {
+        test: /\.mp4$/i,
+        type: "asset/resource",
+        generator: { filename: "assets/[name][ext]" },
+      },
+      {
         test: /\.html$/i,
         loader: "html-loader",
       },
@@ -35,17 +40,15 @@ module.exports = {
   },
   plugins: [
     new CopyPlugin({
-      patterns: [
-        { from: './assets/', to: './assets/' },
-      ],
+      patterns: [{ from: "./assets/", to: "./assets/" }],
     }),
     new HtmlWebpackPlugin({
       template: "index.html",
-      inject: 'body',
+      inject: "body",
     }),
   ],
   output: {
-    filename: 'bundle.js',
+    filename: "bundle.js",
     path: path.resolve(__dirname, "build"),
   },
 };
